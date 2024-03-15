@@ -1,8 +1,7 @@
-from dict_csv_handler import DictCSVHandler
-
-dict_handler = DictCSVHandler('./data/dict/split')
+from dict_toolkit.dict_csv_handler import DictCSVHandler
 
 if __name__ == '__main__':
+    dic_csv_hander = DictCSVHandler()
     word = input('Enter a word: ')
-    lexical_item = dict_handler.query(word)
+    lexical_item = dic_csv_hander.query(word)
     print(lexical_item)

@@ -1,11 +1,12 @@
-from dict_handler import DictHandler
-from lexical_item import LexicalItem
+from dict_toolkit.dict_handler import DictHandler
+from dict_toolkit.lexical_item import LexicalItem
+from dict_toolkit import default_dict_path
 import csv
 import os
 
 class DictCSVHandler(DictHandler):
-    def __init__(self, dict_path):
-        self.dict_path = dict_path
+    def __init__(self, dict_path=None):
+        self.dict_path = dict_path if dict_path else default_dict_path
 
     def search_csv_files(directory, column_name, match_function):
         csv_files = [f for f in os.listdir(directory) if f.endswith('.csv')]
