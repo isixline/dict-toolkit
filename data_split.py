@@ -24,7 +24,7 @@ def split_csv_by_first_letter(input_file, output_dir, column_to_split):
             writer.writerows(rows)
 
 input_file = 'temp/dict.base.csv'
-output_dir = 'temp/split'
+output_dir = 'dict/split'
 column_to_split = 'word'
 
 split_csv_by_first_letter(input_file, output_dir, column_to_split)
