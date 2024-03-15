@@ -1,5 +1,8 @@
 from dict_csv_handler import DictCSVHandler
 
 dict_handler = DictCSVHandler('dict/split')
-word = input('Enter a word: ')
-print(dict_handler.query(word))
+
+if __name__ == '__main__':
+    word = input('Enter a word: ')
+    lexical_item = dict_handler.query(word)
+    print(lexical_item)
