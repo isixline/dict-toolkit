@@ -1,6 +1,6 @@
 from dict_csv_handler import DictCSVHandler
 
-dict_handler = DictCSVHandler('dict/split')
+dict_handler = DictCSVHandler('./data/dict/split')
 
 if __name__ == '__main__':
     word = input('Enter a word: ')
