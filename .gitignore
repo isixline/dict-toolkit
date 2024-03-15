@@ -62,3 +62,7 @@ logs/
 .idea
 .vscode
 temp/
+
+dist/
+*.egg-info/
+
