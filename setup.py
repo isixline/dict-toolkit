@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='dict-toolkit',
-    version='0.0.1',
+    version='0.0.2',
     packages=find_packages(),
     package_data={
         'dict_toolkit': ['data/dict/split/*.csv'],
