@@ -4,7 +4,7 @@ class DictHandler(ABC):
     @abstractmethod
     def query(self, word):
         pass
-    
+
     # add
     # update
     # remove
