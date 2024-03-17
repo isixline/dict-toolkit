@@ -1,7 +1,6 @@
-from dict_toolkit.extensions.dict_csv_handler import DictCSVHandler
+from dict_toolkit.extensions.query_agent import auto_query
 
 if __name__ == '__main__':
-    dic_csv_hander = DictCSVHandler()
     word = input('Enter a word: ')
-    lexical_item = dic_csv_hander.query(word)
+    lexical_item = auto_query(word)
     print(lexical_item)
