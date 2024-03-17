@@ -1,7 +1,7 @@
-from dict_toolkit.dict_handler import DictHandler
-from dict_toolkit.lexical_item import LexicalItem
+from dict_toolkit.core.dict_handler import DictHandler
+from dict_toolkit.core.lexical_item import LexicalItem
 from dict_toolkit import default_dict_path
-from dict_toolkit.match_rules import word_match
+from dict_toolkit.core.match_rules import word_match
 from dict_toolkit.utils.csv_util import search_csv_files
 
 class DictCSVHandler(DictHandler):

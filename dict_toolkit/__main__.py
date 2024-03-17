@@ -1,4 +1,4 @@
-from dict_toolkit.dict_csv_handler import DictCSVHandler
+from dict_toolkit.extensions.dict_csv_handler import DictCSVHandler
 
 if __name__ == '__main__':
     dic_csv_hander = DictCSVHandler()
